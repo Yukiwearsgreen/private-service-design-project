@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style-sapce.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="d-flex justify-content-center py-3">
+      <a
+        href="/index.html"
+        class="cocoon top-3 start-0 mx-3 text-decoration-none"
+      >
+        <span class="fs-4">Cocoon</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item-space">
+          <a href="/index.html" class="nav-link" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item-space">
+          <a href="./explore.html" class="nav-link">Explore</a>
+        </li>
+        <li class="nav-item-space">
+          <a href="./personal.html" class="nav-link">Space</a>
+        </li>
+        <li class="nav-item-space">
+          <a href="./booking.html" class="nav-link">Book</a>
+        </li>
+        <li class="nav-item-space">
+          <a href="./faq.html" class="nav-link">FAQs</a>
+        </li>
+        <li class="nav-item-space">
+          <a href="./about.html" class="nav-link">About</a>
+        </li>
+      </ul>
+    </header>
+    <h1 class="py-0 my-3 px-3 text-center">Build Your Cocoon</h1>
+    <label for="customRange" class="form-label px-3">Lighting</label>
+    <input
+      type="range"
+      class="form-range px-3 col-12"
+      min="0"
+      max="100"
+      id="slider"
+    />
+    <output
+      class="px-3"
+      for="slider"
+      id="rangeValue"
+      aria-hidden="true"
+    ></output>
+
+    <script>
+      // This is an example script, please modify as needed
+      const rangeInput = document.getElementById("slider");
+      const rangeOutput = document.getElementById("rangeValue");
+
+      // Set initial value
+      rangeOutput.textContent = rangeInput.value;
+
+      rangeInput.addEventListener("input", function () {
+        rangeOutput.textContent = this.value;
+      });
+    </script>
+    <section>
+      <div
+        class="dropdown py-3 mt-3 mb-3 px-3 d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center"
+      >
+        <div>
+          <button
+            class="btn btn-outline-dark btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Weighted Blanket
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Yes</a></li>
+            <li><a class="dropdown-item" href="#">No</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="btn btn-outline-dark btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Cervical Pillows
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Yes</a></li>
+            <li><a class="dropdown-item" href="#">No</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="btn btn-outline-dark btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Heated Pads
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Yes</a></li>
+            <li><a class="dropdown-item" href="#">No</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="btn btn-outline-dark btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Sounscape
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Rain</a></li>
+            <li><a class="dropdown-item" href="#">Wind</a></li>
+            <li><a class="dropdown-item" href="#">Ambient Drone</a></li>
+            <li><a class="dropdown-item" href="#">Whispering Forest</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="btn btn-outline-dark btn-lg dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Scent
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Lavender</a></li>
+            <li><a class="dropdown-item" href="#">Chamomile</a></li>
+            <li><a class="dropdown-item" href="#">Cedarwood</a></li>
+            <li><a class="dropdown-item" href="#">Eucalyptus</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section
+      class="d-flex justify-content-center py-3 mt-3 mb-3 px-3 flex-column flex-md-row align-items-center"
+    >
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input active"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio1"
+          value="option1"
+        />
+        <label class="form-check-label" for="inlineRadio1">10 minutes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio2"
+          value="option2"
+        />
+        <label class="form-check-label" for="inlineRadio2">25 minutes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio2"
+          value="option2"
+        />
+        <label class="form-check-label" for="inlineRadio2">40 minutes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio2"
+          value="option2"
+        />
+        <label class="form-check-label" for="inlineRadio2">55 minutes</label>
+      </div>
+    </section>
+    <div class="submit-button pb-5 pt-0 mt-0 mb-5">
+      <input class="btn btn-outline-dark" type="submit" value="Submit" />
+    </div>
+
+    <div class="position-relative">
+      <footer class="position-absolute top-100 start-50 translate-middle">
+        <p class="text-center text-body-secondary">
+          © 2025 Cocoon, All rights reserved. <br />Designed by Negar Khorasani
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

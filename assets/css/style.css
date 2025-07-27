@@ -1,0 +1,108 @@
+body {
+  background-image: url(/assets/pics/chad-stembridge-4fQ_uFLz5OM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+}
+.cocoon {
+  z-index: 1000;
+}
+.nav-item a {
+  background-color: rgba(243, 224, 198, 0);
+  color: black;
+}
+.nav-item a:hover {
+  color: rgb(55, 55, 55);
+}
+.container-text-center {
+  background-color: rgba(162, 195, 225, 0.045);
+  text-align: center;
+  border-radius: 25px;
+  max-width: 60%;
+  margin: 20%;
+}
+p {
+  color: rgb(3, 0, 0);
+}
+.list-group label {
+  background-color: rgba(162, 195, 225, 0.045);
+  border: 1px solid black;
+  text-align: left;
+  text-justify: auto;
+}
+button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+button a:hover {
+  color: aliceblue;
+}
+#slider::-webkit-slider-runnable-track {
+  background-color: rgb(101, 112, 112);
+}
+#slider::-webkit-slider-thumb {
+  background-color: rgb(76, 76, 76);
+}
+.form-check-input[type="radio"]:focus {
+  box-shadow: 0 0 0 0.25rem rgba(105, 105, 105, 0.25);
+  background-color: rgb(76, 76, 76);
+}
+.form-check-input:checked [type="radio"] {
+  background-color: rgb(76, 76, 76);
+}
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-your-space {
+  background-color: rgba(0, 0, 0, 0.488);
+  max-width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+.container-your-space p {
+  color: rgb(233, 221, 206);
+}
+.container-your-space h2 {
+  color: rgb(233, 221, 206);
+}
+.your-space {
+  color: rgb(233, 221, 206);
+}
+.your-space:hover {
+  color: rgba(0, 0, 0, 0.797);
+}
+.container-your-space-faq {
+  background-color: rgba(0, 0, 0, 0.488);
+  color: rgb(233, 221, 206);
+}
+.cocoon {
+  color: rgb(233, 221, 206);
+}
+.nav-item-faq a {
+  color: rgb(233, 221, 206);
+}
+.list-group-item2 {
+  border: 1px solid black;
+}
+.box-light p {
+  background-color: rgba(0, 0, 0, 0.488);
+  padding: 2rem;
+  text-align: center;
+  color: rgb(233, 221, 206);
+  border-radius: 25px;
+  align-items: center;
+}
+.container-people .box-light {
+  display: flex;
+  align-items: stretch;
+}
+.container-dark-space {
+  background-color: rgba(0, 0, 0, 0.488);
+}
